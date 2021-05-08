@@ -21,8 +21,9 @@ import { createUploadLink } from 'apollo-upload-client'
 
 const client = new ApolloClient({
     link: createUploadLink({
+        uri: "/built-lambda/graphql"
         // uri: "/.netlify/functions/graphql"
-        uri: "http://localhost:9000/graphql"
+        // uri: "http://localhost:9000/graphql"
     }),
     cache: new InMemoryCache()
   })
