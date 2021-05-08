@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import logo from "./logo.svg"
 import "./App.css"
 import { gql } from 'apollo-boost';
-import { Query, Mutation } from 'react-apollo';
+// import { Query, Mutation } from 'react-apollo';
 import { useMutation } from "@apollo/client"
 
 
@@ -37,11 +37,11 @@ class LambdaDemo extends Component {
 }
 
 
-const QUERY_HELLO = gql`
-  query {
-    hello
-  }
-`
+// const QUERY_HELLO = gql`
+//   query {
+//     hello
+//   }
+// `
 
 const MUTATION_FILE = gql`
 mutation upload($file: Upload!) {
